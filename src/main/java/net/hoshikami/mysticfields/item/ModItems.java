@@ -13,6 +13,8 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MysticFields.MOD_ID);
 
     public static final RegistryObject<Item> CRYSTALLIZED_MOONLIGHT = ITEMS.register("crystallized_moonlight",
+            () -> new Item(new Item.Properties().stacksTo(1).setNoRepair().durability(5)));
+    public static final RegistryObject<Item> RAW_CRYSTALLIZED_MOONLIGHT = ITEMS.register("raw_crystallized_moonlight",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

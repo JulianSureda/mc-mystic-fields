@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.mystic_fields_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CRYSTALLIZED_MOONLIGHT.get());
+                        output.accept(ModItems.RAW_CRYSTALLIZED_MOONLIGHT.get());
                     })
                     .build());
 
