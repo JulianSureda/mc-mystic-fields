@@ -1,5 +1,8 @@
 {
   "item.mysticfields.crystallized_moonlight": "Purified Crystallized Moonlight",
   "item.mysticfields.raw_crystallized_moonlight": "Raw Crystallized Moonlight",
+  "item.mysticfields.crystallized_sunlight": "Purified Crystallized Sunlight",
+  "item.mysticfields.raw_crystallized_sunlight": "Raw Crystallized Sunlight",
+  "block.mysticfields.infusion_altar": "Infusion Altar",
   "creativetab.mystic_fields_tab": "Mystic Fields"
 }

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {"model": "mysticfields:models/block/infusion_altar",
+      "y": 0
+    },
+    "facing=east": {"model": "mysticfields:models/block/infusion_altar",
+      "y": 90
+    },
+    "facing=south": {"model": "mysticfields:models/block/infusion_altar",
+      "y": 180
+    },
+    "facing=west": {"model": "mysticfields:models/block/infusion_altar",
+      "y": 270
+    }
+  }
+}

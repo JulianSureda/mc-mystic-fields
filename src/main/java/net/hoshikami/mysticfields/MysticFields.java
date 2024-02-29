@@ -1,9 +1,10 @@
 package net.hoshikami.mysticfields;
 
 import com.mojang.logging.LogUtils;
-import net.hoshikami.mysticfields.item.ModCreativeModeTabs;
+import net.hoshikami.mysticfields.block.ModBlocks;
 import net.hoshikami.mysticfields.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +34,7 @@ public class MysticFields
 
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -65,6 +67,7 @@ public class MysticFields
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.INFUSION_ALTAR.get(), RenderType.translucent());
         }
     }
 }

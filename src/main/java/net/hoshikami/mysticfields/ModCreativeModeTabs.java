@@ -1,6 +1,8 @@
-package net.hoshikami.mysticfields.item;
+package net.hoshikami.mysticfields;
 
 import net.hoshikami.mysticfields.MysticFields;
+import net.hoshikami.mysticfields.block.ModBlocks;
+import net.hoshikami.mysticfields.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,7 +20,11 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.mystic_fields_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CRYSTALLIZED_MOONLIGHT.get());
+                        output.accept(ModItems.CRYSTALLIZED_SUNLIGHT.get());
                         output.accept(ModItems.RAW_CRYSTALLIZED_MOONLIGHT.get());
+                        output.accept(ModItems.RAW_CRYSTALLIZED_SUNLIGHT.get());
+                        output.accept(ModBlocks.INFUSION_ALTAR.get());
+
                     })
                     .build());
 
