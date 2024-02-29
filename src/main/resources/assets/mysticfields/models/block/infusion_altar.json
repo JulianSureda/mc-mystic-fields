@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64,64],
 	"textures": {
-		"0": "mysticfields:textures/block/Ritual_altar_texture",
-		"particle": "mysticfields:textures/block/Ritual_altar_texture"
+		"0": "mysticfields:block/ritual_altar_texture",
+		"particle": "mysticfields:block/ritual_altar_texture"
 	},
 	"elements": [
 		{

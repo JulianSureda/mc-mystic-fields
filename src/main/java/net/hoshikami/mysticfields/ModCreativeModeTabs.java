@@ -19,11 +19,11 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CRYSTALLIZED_MOONLIGHT.get()))
                     .title(Component.translatable("creativetab.mystic_fields_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.INFUSION_ALTAR.get());
                         output.accept(ModItems.CRYSTALLIZED_MOONLIGHT.get());
                         output.accept(ModItems.CRYSTALLIZED_SUNLIGHT.get());
                         output.accept(ModItems.RAW_CRYSTALLIZED_MOONLIGHT.get());
                         output.accept(ModItems.RAW_CRYSTALLIZED_SUNLIGHT.get());
-                        output.accept(ModBlocks.INFUSION_ALTAR.get());
 
                     })
                     .build());
